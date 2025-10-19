@@ -5,287 +5,379 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - SkillSwap+</title>
-    <link rel="stylesheet" href="../../../comon/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            /* For browsers that support it */
+            color: transparent;
+            /* fallback */
+        }
+    </style>
 </head>
 
-<body>
-    <!-- Header -->
-    <header>
-        <div class="container header-container">
-            <a href="../dashborad/dashborad.html" class="logo">
-                <i class="fas fa-exchange-alt"></i>
-                SkillSwap+
-            </a>
+<body class="bg-gray-50">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <a href="../dashborad/dashborad.html" class="flex items-center">
+                    <i class="fas fa-exchange-alt text-purple-600 text-2xl mr-2"></i>
+                    <span class="text-xl font-bold gradient-text">SkillSwap+</span>
+                </a>
 
-            <nav class="nav-links">
-                <a href="../../../index.html">Home</a>
-               
-                <a href="../../../index.html#how-it-works">How It Works</a>
-                <a href="../../../index.html#features">Features</a>
-                <a href="../../../index.html#community">Community</a>
-                <a href="../../../index.html#pricing">Pricing</a>
-                 <a href="../browse/browse.html">Browse Skills</a>
-                <a href="./contact.html">Contact Us</a>
-            </nav>
+                <!-- Navigation Links -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="../../../index.html" class="text-gray-700 hover:text-purple-600 font-medium">Home</a>
+                    <a href="../../../index.html#how-it-works"
+                        class="text-gray-700 hover:text-purple-600 font-medium">How It Works</a>
+                    <a href="../../../index.html#features"
+                        class="text-gray-700 hover:text-purple-600 font-medium">Features</a>
+                    <a href="../../../index.html#community"
+                        class="text-gray-700 hover:text-purple-600 font-medium">Community</a>
+                    <a href="../../../index.html#pricing"
+                        class="text-gray-700 hover:text-purple-600 font-medium">Pricing</a>
+                    <a href="../browse/browse.html" class="text-gray-700 hover:text-purple-600 font-medium">Browse
+                        Skills</a>
+                    <a href="./contact.html" class="text-purple-600 font-medium">Contact Us</a>
+                </div>
 
-            <div class="auth-buttons">
-                <a href="../login/login.html" class="btn btn-secondary">Log In</a>
-                <a href="../signup/signup.html" class="btn btn-primary">Sign Up</a>
-            </div>
+                <!-- Auth Buttons -->
+                <div class="hidden md:flex space-x-4">
+                    <a href="../login/login.html"
+                        class="bg-white text-purple-600 border border-purple-600 px-6 py-2 rounded-lg font-medium hover:bg-purple-50 transition duration-300">Log
+                        In</a>
+                    <a href="../signup/signup.html"
+                        class="gradient-bg text-white px-6 py-2 rounded-lg font-medium hover:shadow-lg transition duration-300">Sign
+                        Up</a>
+                </div>
 
-            <div class="mobile-menu">
-                <i class="fas fa-bars"></i>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button class="text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
             </div>
         </div>
-    </header>
+    </nav>
 
     <!-- Contact Section -->
-    <section class="contact">
-        <div class="container">
-            <h1>Contact SkillSwap+</h1>
+    <section class="py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <h1 class="text-4xl font-bold text-center mb-12 gradient-text">Contact SkillSwap+</h1>
 
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h2>Get In Touch</h2>
-                    <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h2 class="text-2xl font-bold mb-6">Get In Touch</h2>
+                    <p class="text-gray-600 mb-8">We'd love to hear from you. Send us a message and we'll respond as
+                        soon as possible.</p>
 
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
+                    <div class="space-y-6">
+                        <!-- Address -->
+                        <div class="flex items-start">
+                            <div
+                                class="gradient-bg w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-white"></i>
+                            </div>
                             <div>
-                                <h3>Address</h3>
-                                <p>123 Learning Street<br>Edutown, ED 12345</p>
+                                <h3 class="font-semibold text-lg mb-1">Address</h3>
+                                <p class="text-gray-600">82A Merit street<br>Mustafa Abad, kasur</p>
                             </div>
                         </div>
 
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
+                        <!-- Phone -->
+                        <div class="flex items-start">
+                            <div
+                                class="gradient-bg w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-phone text-white"></i>
+                            </div>
                             <div>
-                                <h3>Phone</h3>
-                                <p>+1 (555) 123-4567</p>
+                                <h3 class="font-semibold text-lg mb-1">Phone</h3>
+                                <p class="text-gray-600">+92318-4347799</p>
                             </div>
                         </div>
 
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
+                        <!-- Email -->
+                        <div class="flex items-start">
+                            <div
+                                class="gradient-bg w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
                             <div>
-                                <h3>Email</h3>
-                                <p>hello@skillswap.com</p>
+                                <h3 class="font-semibold text-lg mb-1">Email</h3>
+                                <p class="text-gray-600">hello@skillswap.com</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <div class="form-header">
-                        <h2>Send Us a Message</h2>
-                        <p>We'll get back to you within 24 hours</p>
+
+                <!-- Contact Form -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="text-center mb-8">
+                        <h2 class="text-2xl font-bold mb-2">Send Us a Message</h2>
+                        <p class="text-gray-600">We'll get back to you within 24 hours</p>
                     </div>
 
-                    <form action="#" method="post" class="professional-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name" class="form-label">
-                                    <span class="label-text">Full Name</span>
-                                    <span class="required">*</span>
+                    <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-6">
+                        <!-- Full Name -->
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2">
+                                Full Name <span class="text-red-500">*</span>
+                            </label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                    <i class="fas fa-user text-gray-400"></i>
+                                </div>
+                                <input type="text" id="name" name="name" required
+                                    class="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition duration-300"
+                                    placeholder="Enter your full name">
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">
+                                Email Address <span class="text-red-500">*</span>
+                            </label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                    <i class="fas fa-envelope text-gray-400"></i>
+                                </div>
+                                <input type="email" id="email" name="email" required
+                                    class="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition duration-300"
+                                    placeholder="your.email@example.com">
+                            </div>
+                        </div>
+
+                        <!-- Subject -->
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">
+                                Subject <span class="text-red-500">*</span>
+                            </label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                    <i class="fas fa-tag text-gray-400"></i>
+                                </div>
+                                <select id="subject" name="subject" required
+                                    class="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition duration-300 appearance-none bg-white">
+                                    <option value="">Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="technical">Technical Support</option>
+                                    <option value="billing">Billing Question</option>
+                                    <option value="partnership">Partnership</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                                    <i class="fas fa-chevron-down text-gray-400"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Message -->
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">
+                                Message <span class="text-red-500">*</span>
+                            </label>
+                            <div class="relative">
+                                <div class="absolute top-3 left-3 pointer-events-none">
+                                    <i class="fas fa-comment text-gray-400"></i>
+                                </div>
+                                <textarea id="message" name="message" rows="6" required
+                                    class="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition duration-300"
+                                    placeholder="Please describe your inquiry in detail..."></textarea>
+                            </div>
+                            <div class="text-right text-sm text-gray-500 mt-1">
+                                <span id="char-count">0</span>/500 characters
+                            </div>
+                        </div>
+
+                        <!-- Contact Method -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-3">Preferred Contact Method</label>
+                            <div class="grid grid-cols-2 gap-4">
+                                <label
+                                    class="flex items-center p-4 border-2 border-gray-200 rounded-lg cursor-pointer hover:border-purple-500 transition duration-300">
+                                    <input type="radio" name="contact-method" value="email" checked
+                                        class="text-purple-600 focus:ring-purple-500">
+                                    <div class="flex items-center ml-3">
+                                        <i class="fas fa-envelope text-gray-400 mr-2"></i>
+                                        <span>Email</span>
+                                    </div>
                                 </label>
-                                <div class="input-container">
-                                    <i class="fas fa-user input-icon"></i>
-                                    <input type="text" id="name" name="name" class="form-input"
-                                        placeholder="Enter your full name" required>
-                                </div>
-                                <div class="input-feedback"></div>
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="email" class="form-label">
-                                    <span class="label-text">Email Address</span>
-                                    <span class="required">*</span>
-                                </label>
-                                <div class="input-container">
-                                    <i class="fas fa-envelope input-icon"></i>
-                                    <input type="email" id="email" name="email" class="form-input"
-                                        placeholder="your.email@example.com" required>
-                                </div>
-                                <div class="input-feedback"></div>
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="subject" class="form-label">
-                                    <span class="label-text">Subject</span>
-                                    <span class="required">*</span>
-                                </label>
-                                <div class="input-container">
-                                    <i class="fas fa-tag input-icon"></i>
-                                    <select id="subject" name="subject" class="form-input" required>
-                                        <option value="">Select a subject</option>
-                                        <option value="general">General Inquiry</option>
-                                        <option value="technical">Technical Support</option>
-                                        <option value="billing">Billing Question</option>
-                                        <option value="partnership">Partnership</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                </div>
-                                <div class="input-feedback"></div>
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="message" class="form-label">
-                                    <span class="label-text">Message</span>
-                                    <span class="required">*</span>
-                                </label>
-                                <div class="textarea-container">
-                                    <i class="fas fa-comment textarea-icon"></i>
-                                    <textarea id="message" name="message" class="form-textarea" rows="6"
-                                        placeholder="Please describe your inquiry in detail..." required></textarea>
-                                </div>
-                                <div class="char-counter">
-                                    <span id="char-count">0</span>/500 characters
-                                </div>
-                                <div class="input-feedback"></div>
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label class="form-label">Preferred Contact Method</label>
-                                <div class="radio-group">
-                                    <label class="radio-option">
-                                        <input type="radio" name="contact-method" value="email" checked>
-                                        <span class="radio-custom"></span>
-                                        <div class="radio-content">
-                                            <i class="fas fa-envelope"></i>
-                                            <span>Email</span>
-                                        </div>
-                                    </label>
-                                    <label class="radio-option">
-                                        <input type="radio" name="contact-method" value="phone">
-                                        <span class="radio-custom"></span>
-                                        <div class="radio-content">
-                                            <i class="fas fa-phone"></i>
-                                            <span>Phone</span>
-                                        </div>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label class="checkbox-option">
-                                    <input type="checkbox" id="newsletter" name="newsletter">
-                                    <span class="checkbox-custom"></span>
-                                    <div class="checkbox-content">
-                                        <span>Subscribe to our newsletter</span>
-                                        <small>Get updates on new features and skill opportunities</small>
+                                <label
+                                    class="flex items-center p-4 border-2 border-gray-200 rounded-lg cursor-pointer hover:border-purple-500 transition duration-300">
+                                    <input type="radio" name="contact-method" value="phone"
+                                        class="text-purple-600 focus:ring-purple-500">
+                                    <div class="flex items-center ml-3">
+                                        <i class="fas fa-phone text-gray-400 mr-2"></i>
+                                        <span>Phone</span>
                                     </div>
                                 </label>
                             </div>
                         </div>
 
-                        <div class="form-actions">
-                            <button type="submit" class="btn btn-primary btn-submit">
-                                <span class="btn-text">Send Message</span>
-                                <i class="fas fa-paper-plane btn-icon"></i>
+                        <!-- Newsletter -->
+                        <div class="flex items-start">
+                            <input type="checkbox" id="newsletter" name="newsletter"
+                                class="mt-1 text-purple-600 focus:ring-purple-500">
+                            <label for="newsletter" class="ml-3 text-sm text-gray-700">
+                                <span class="font-medium">Subscribe to our newsletter</span>
+                                <p class="text-gray-500 text-xs mt-1">Get updates on new features and skill
+                                    opportunities</p>
+                            </label>
+                        </div>
+
+                        <!-- Submit Buttons -->
+                        <div class="flex space-x-4">
+                            <button type="submit"
+                                class="flex-1 gradient-bg text-white py-3 px-4 rounded-lg font-semibold hover:shadow-lg transition duration-300 flex items-center justify-center">
+                                <i class="fas fa-paper-plane mr-2"></i>
+                                Send Message
                             </button>
-                            <button type="reset" class="btn btn-secondary">
+                            <button type="reset"
+                                class="flex-1 bg-gray-200 text-gray-800 py-3 px-4 rounded-lg font-semibold hover:bg-gray-300 transition duration-300">
                                 Clear Form
                             </button>
                         </div>
 
-                        <div class="form-footer">
-                            <p><span class="required">*</span> Required fields</p>
+                        <div class="text-center text-sm text-gray-500">
+                            <p><span class="text-red-500">*</span> Required fields</p>
                         </div>
                     </form>
                 </div>
-
             </div>
 
-            <!-- Additional required HTML elements -->
-            <section class="html-elements">
-                <h3>HTML Elements in Contact Page</h3>
-
-                <!-- Headings -->
-                <h4>This is H4 Heading</h4>
-                <h5>This is H5 Heading</h5>
-                <h6>This is H6 Heading</h6>
-
-                <!-- Paragraph -->
-                <p>This paragraph demonstrates the consistent use of HTML elements across all pages.</p>
-
-                <!-- Horizontal Line -->
-                <hr>
-
-                <!-- Lists -->
-                <h4>Office Hours</h4>
-                <ul>
-                    <li>Monday-Friday: 9AM-6PM</li>
-                    <li>Saturday: 10AM-4PM</li>
-                    <li>Sunday: Closed</li>
-                </ul>
-
-                <!-- Image -->
-                <img src="../../../src/assets/images/contact-office.jpg" alt="Our Office" width="400">
-            </section>
+            <!-- Additional Info -->
+            <div class="mt-16 bg-gradient-to-r from-purple-50 to-blue-50 p-8 rounded-2xl">
+                <h3 class="text-2xl font-bold text-center mb-8 gradient-text">Office Hours</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <i class="fas fa-calendar-day text-purple-600 text-2xl mb-3"></i>
+                        <h4 class="font-semibold mb-2">Monday-Friday</h4>
+                        <p class="text-gray-600">9:00 AM - 6:00 PM</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <i class="fas fa-calendar-alt text-purple-600 text-2xl mb-3"></i>
+                        <h4 class="font-semibold mb-2">Saturday</h4>
+                        <p class="text-gray-600">10:00 AM - 4:00 PM</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <i class="fas fa-calendar-times text-purple-600 text-2xl mb-3"></i>
+                        <h4 class="font-semibold mb-2">Sunday</h4>
+                        <p class="text-gray-600">Closed</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-container">
-                <div class="footer-column">
-                    <h4>SkillSwap+</h4>
-                    <p>Connecting learners and doers through skill exchange and paid micro-sessions.</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-exchange-alt text-purple-400 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold">SkillSwap+</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Connecting learners and doers through skill exchange and paid
+                        micro-sessions.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="footer-column">
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="../../../index.html">Home</a></li>
-                        <li><a href="../../../index.html#how-it-works">How It Works</a></li>
-                        <li><a href="../../../index.html#features">Features</a></li>
-                        <li><a href="../../../index.html#community">Community</a></li>
-                        <li><a href="../../../index.html#pricing">Pricing</a></li>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../../../index.html"
+                                class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="../../../index.html#how-it-works"
+                                class="text-gray-400 hover:text-white transition duration-300">How It Works</a></li>
+                        <li><a href="../../../index.html#features"
+                                class="text-gray-400 hover:text-white transition duration-300">Features</a></li>
+                        <li><a href="../../../index.html#community"
+                                class="text-gray-400 hover:text-white transition duration-300">Community</a></li>
+                        <li><a href="../../../index.html#pricing"
+                                class="text-gray-400 hover:text-white transition duration-300">Pricing</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h4>Support</h4>
-                    <ul class="footer-links">
-                        <li><a href="../about/about.html">About Us</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
+
+                <!-- Support -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../about/about.html"
+                                class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="./contact.html"
+                                class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">FAQs</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Privacy
+                                Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Terms of
+                                Service</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h4>Contact Us</h4>
-                    <ul class="footer-links">
-                        <li><i class="fas fa-envelope"></i> hello@skillswap.com</li>
-                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
-                        <li><i class="fas fa-map-marker-alt"></i> 123 Learning St, Edutown</li>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3"></i>
+                            <span>hello@skillswap.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3"></i>
+                            <span>+92318-4347799</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-3"></i>
+                            <span>Mustafa Abad, kasur </span>
+                        </li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 SkillSwap+. All rights reserved.</p>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 SkillSwap+. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="../../../script.js"></script>
+    <script>
+        // Character counter for message textarea
+        const messageTextarea = document.getElementById('message');
+        const charCount = document.getElementById('char-count');
+
+        messageTextarea.addEventListener('input', function () {
+            charCount.textContent = this.value.length;
+        });
+    </script>
 </body>
 
 </html>

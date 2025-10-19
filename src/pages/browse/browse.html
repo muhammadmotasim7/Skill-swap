@@ -4,186 +4,303 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - SkillSwap+</title>
-    <link rel="stylesheet" href="../../../comon/style.css">
+    <title>Browse Skills - SkillSwap+</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .gradient-bg-light {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        .gradient-bg-success {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            /* For browsers that support it */
+            color: transparent;
+            /* fallback */
+        }
+    </style>
 </head>
 
-<body>
-    <!-- Header -->
-    <header>
-        <div class="container header-container">
-            <a href="../dashborad/dashborad.html" class="logo">
-                <i class="fas fa-exchange-alt"></i>
-                SkillSwap+
-            </a>
+<body class="bg-gray-50">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <a href="../dashborad/dashborad.html" class="flex items-center">
+                    <i class="fas fa-exchange-alt text-purple-600 text-2xl mr-2"></i>
+                    <span class="text-xl font-bold gradient-text">SkillSwap+</span>
+                </a>
 
-            <nav class="nav-links">
-                <a href="../../../index.html">Home</a>
-                <a href="../../../index.html#how-it-works">How It Works</a>
-                <a href="../../../index.html#features">Features</a>
-                <a href="../../../index.html#community">Community</a>
-                <a href="../../../index.html#pricing">Pricing</a>
-                <a href="./browse.html">Browse Skills</a>
-                <a href="../contact/contact.html">Contact Us</a>
-            </nav>
+                <!-- Navigation Links -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="../../../index.html" class="text-gray-700 hover:text-purple-600 font-medium">Home</a>
+                    <a href="../../../index.html#how-it-works"
+                        class="text-gray-700 hover:text-purple-600 font-medium">How It Works</a>
+                    <a href="../../../index.html#features"
+                        class="text-gray-700 hover:text-purple-600 font-medium">Features</a>
+                    <a href="../../../index.html#community"
+                        class="text-gray-700 hover:text-purple-600 font-medium">Community</a>
+                    <a href="../../../index.html#pricing"
+                        class="text-gray-700 hover:text-purple-600 font-medium">Pricing</a>
+                    <a href="./browse.html" class="text-purple-600 font-medium">Browse Skills</a>
+                    <a href="../contact/contact.html" class="text-gray-700 hover:text-purple-600 font-medium">Contact
+                        Us</a>
+                </div>
 
-            <div class="auth-buttons">
-                <a href="../login/login.html" class="btn btn-secondary">Log In</a>
-                <a href="../signup/signup.html" class="btn btn-primary">Sign Up</a>
+                <!-- Auth Buttons -->
+                <div class="hidden md:flex space-x-4">
+                    <a href="../login/login.html"
+                        class="bg-white text-purple-600 border border-purple-600 px-6 py-2 rounded-lg font-medium hover:bg-purple-50 transition duration-300">Log
+                        In</a>
+                    <a href="../signup/signup.html"
+                        class="gradient-bg text-white px-6 py-2 rounded-lg font-medium hover:shadow-lg transition duration-300">Sign
+                        Up</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button class="text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
             </div>
-
         </div>
-    </header>
+    </nav>
 
-    <section class="about-browse">
-        <div class="container">
-            <div class="about-header">
-                <h2>About Our Skill Marketplace</h2>
-                <p class="about-subtitle">Discover, Learn, and Connect with Skilled Professionals</p>
+    <!-- Browse Skills Section -->
+    <section class="py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <!-- Header -->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 gradient-text">Browse Our Skill Marketplace</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Discover, Learn, and Connect with Skilled
+                    Professionals in Various Fields</p>
             </div>
 
-            <div class="about-content">
-                <div class="about-grid">
-                    <div class="about-card">
-                        <div class="about-icon">
-                            <i class="fas fa-search"></i>
-                        </div>
-                        <h3>Find Your Perfect Match</h3>
-                        <p>Browse through hundreds of verified skills and find the perfect teacher or learner that
-                            matches your needs and schedule.</p>
-                        <ul class="feature-list">
-                            <li><i class="fas fa-check"></i> Advanced search filters</li>
-                            <li><i class="fas fa-check"></i> Skill level matching</li>
-                            <li><i class="fas fa-check"></i> Location-based results</li>
-                        </ul>
+            <!-- Features Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <!-- Feature 1 -->
+                <div
+                    class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-2xl text-center hover:shadow-xl transition duration-300">
+                    <div class="gradient-bg w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-search text-2xl text-white"></i>
                     </div>
-
-                    <div class="about-card">
-                        <div class="about-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <h3>Verified Professionals</h3>
-                        <p>All our skill providers are thoroughly verified with background checks and skill assessments
-                            to ensure quality.</p>
-                        <ul class="feature-list">
-                            <li><i class="fas fa-check"></i> Background verification</li>
-                            <li><i class="fas fa-check"></i> Skill proficiency tests</li>
-                            <li><i class="fas fa-check"></i> Student reviews & ratings</li>
-                        </ul>
-                    </div>
-
-                    <div class="about-card">
-                        <div class="about-icon">
-                            <i class="fas fa-handshake"></i>
-                        </div>
-                        <h3>Secure Transactions</h3>
-                        <p>Our escrow payment system ensures your money is safe until you confirm satisfactory
-                            completion of sessions.</p>
-                        <ul class="feature-list">
-                            <li><i class="fas fa-check"></i> Escrow protected payments</li>
-                            <li><i class="fas fa-check"></i> Secure messaging</li>
-                            <li><i class="fas fa-check"></i> Dispute resolution</li>
-                        </ul>
-                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Find Your Perfect Match</h3>
+                    <p class="text-gray-600 mb-6">Browse through hundreds of verified skills and find the perfect
+                        teacher or learner that matches your needs and schedule.</p>
+                    <ul class="text-left space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Advanced search filters</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Skill level matching</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Location-based results</span>
+                        </li>
+                    </ul>
                 </div>
 
-                <!-- How It Works in Browse -->
-                <div class="browse-process">
-                    <h3>How Browse Skills Works</h3>
-                    <div class="process-steps">
-                        <div class="process-step">
-                            <div class="step-number">1</div>
-                            <div class="step-content">
-                                <h4>Search & Filter</h4>
-                                <p>Use our advanced filters to find skills by category, price, location, rating, and
-                                    availability.</p>
-                            </div>
-                        </div>
-                        <div class="process-step">
-                            <div class="step-number">2</div>
-                            <div class="step-content">
-                                <h4>Compare & Review</h4>
-                                <p>View detailed profiles, read reviews, compare prices, and check availability
-                                    calendars.</p>
-                            </div>
-                        </div>
-                        <div class="process-step">
-                            <div class="step-number">3</div>
-                            <div class="step-content">
-                                <h4>Connect & Book</h4>
-                                <p>Message teachers directly, ask questions, and book sessions that fit your schedule.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="process-step">
-                            <div class="step-number">4</div>
-                            <div class="step-content">
-                                <h4>Learn & Grow</h4>
-                                <p>Attend sessions, learn new skills, and leave reviews to help our community grow.</p>
-                            </div>
-                        </div>
+                <!-- Feature 2 -->
+                <div
+                    class="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-2xl text-center hover:shadow-xl transition duration-300">
+                    <div class="gradient-bg-light w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-shield-alt text-2xl text-white"></i>
                     </div>
+                    <h3 class="text-xl font-semibold mb-4">Verified Professionals</h3>
+                    <p class="text-gray-600 mb-6">All our skill providers are thoroughly verified with background checks
+                        and skill assessments to ensure quality.</p>
+                    <ul class="text-left space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Background verification</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Skill proficiency tests</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Student reviews & ratings</span>
+                        </li>
+                    </ul>
                 </div>
 
-                <!-- Skill Categories Overview -->
-                <div class="categories-overview">
-                    <h3>Popular Skill Categories</h3>
-                    <div class="categories-grid">
-                        <div class="category-item">
-                            <i class="fas fa-laptop-code"></i>
-                            <span>Technology</span>
-                        </div>
-                        <div class="category-item">
-                            <i class="fas fa-paint-brush"></i>
-                            <span>Design</span>
-                        </div>
-                        <div class="category-item">
-                            <i class="fas fa-chart-line"></i>
-                            <span>Business</span>
-                        </div>
-                        <div class="category-item">
-                            <i class="fas fa-music"></i>
-                            <span>Music</span>
-                        </div>
-                        <div class="category-item">
-                            <i class="fas fa-utensils"></i>
-                            <span>Cooking</span>
-                        </div>
-                        <div class="category-item">
-                            <i class="fas fa-language"></i>
-                            <span>Languages</span>
-                        </div>
-                        <div class="category-item">
-                            <i class="fas fa-dumbbell"></i>
-                            <span>Fitness</span>
-                        </div>
-                        <div class="category-item">
-                            <i class="fas fa-camera"></i>
-                            <span>Photography</span>
-                        </div>
+                <!-- Feature 3 -->
+                <div
+                    class="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl text-center hover:shadow-xl transition duration-300">
+                    <div
+                        class="gradient-bg-success w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-handshake text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Secure Transactions</h3>
+                    <p class="text-gray-600 mb-6">Our escrow payment system ensures your money is safe until you confirm
+                        satisfactory completion of sessions.</p>
+                    <ul class="text-left space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Escrow protected payments</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Secure messaging</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Dispute resolution</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- How It Works -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg mb-16">
+                <h3 class="text-3xl font-bold text-center mb-12 gradient-text">How Browse Skills Works</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Step 1 -->
+                    <div class="text-center">
+                        <div
+                            class="gradient-bg w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
+                            1</div>
+                        <h4 class="text-lg font-semibold mb-3">Search & Filter</h4>
+                        <p class="text-gray-600">Use our advanced filters to find skills by category, price, location,
+                            rating, and availability.</p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="text-center">
+                        <div
+                            class="gradient-bg-light w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
+                            2</div>
+                        <h4 class="text-lg font-semibold mb-3">Compare & Review</h4>
+                        <p class="text-gray-600">View detailed profiles, read reviews, compare prices, and check
+                            availability calendars.</p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="text-center">
+                        <div
+                            class="gradient-bg-success w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
+                            3</div>
+                        <h4 class="text-lg font-semibold mb-3">Connect & Book</h4>
+                        <p class="text-gray-600">Message teachers directly, ask questions, and book sessions that fit
+                            your schedule.</p>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="text-center">
+                        <div
+                            class="gradient-bg w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
+                            4</div>
+                        <h4 class="text-lg font-semibold mb-3">Learn & Grow</h4>
+                        <p class="text-gray-600">Attend sessions, learn new skills, and leave reviews to help our
+                            community grow.</p>
                     </div>
                 </div>
+            </div>
 
-                <!-- Stats Section -->
-                <div class="stats-section">
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <div class="stat-number" data-count="1000">0</div>
-                            <div class="stat-label">Active Teachers</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number" data-count="5000">0</div>
-                            <div class="stat-label">Skills Available</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number" data-count="25000">0</div>
-                            <div class="stat-label">Sessions Completed</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number" data-count="4.8">0</div>
-                            <div class="stat-label">Average Rating</div>
-                        </div>
+            <!-- Skill Categories -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold text-center mb-12 gradient-text">Popular Skill Categories</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <!-- Category 1 -->
+                    <div
+                        class="bg-white p-6 rounded-2xl text-center hover:shadow-lg transition duration-300 cursor-pointer border-2 border-transparent hover:border-purple-500">
+                        <i class="fas fa-laptop-code text-purple-600 text-3xl mb-3"></i>
+                        <span class="font-semibold">Technology</span>
+                    </div>
+
+                    <!-- Category 2 -->
+                    <div
+                        class="bg-white p-6 rounded-2xl text-center hover:shadow-lg transition duration-300 cursor-pointer border-2 border-transparent hover:border-pink-500">
+                        <i class="fas fa-paint-brush text-pink-600 text-3xl mb-3"></i>
+                        <span class="font-semibold">Design</span>
+                    </div>
+
+                    <!-- Category 3 -->
+                    <div
+                        class="bg-white p-6 rounded-2xl text-center hover:shadow-lg transition duration-300 cursor-pointer border-2 border-transparent hover:border-blue-500">
+                        <i class="fas fa-chart-line text-blue-600 text-3xl mb-3"></i>
+                        <span class="font-semibold">Business</span>
+                    </div>
+
+                    <!-- Category 4 -->
+                    <div
+                        class="bg-white p-6 rounded-2xl text-center hover:shadow-lg transition duration-300 cursor-pointer border-2 border-transparent hover:border-green-500">
+                        <i class="fas fa-music text-green-600 text-3xl mb-3"></i>
+                        <span class="font-semibold">Music</span>
+                    </div>
+
+                    <!-- Category 5 -->
+                    <div
+                        class="bg-white p-6 rounded-2xl text-center hover:shadow-lg transition duration-300 cursor-pointer border-2 border-transparent hover:border-red-500">
+                        <i class="fas fa-utensils text-red-600 text-3xl mb-3"></i>
+                        <span class="font-semibold">Cooking</span>
+                    </div>
+
+                    <!-- Category 6 -->
+                    <div
+                        class="bg-white p-6 rounded-2xl text-center hover:shadow-lg transition duration-300 cursor-pointer border-2 border-transparent hover:border-yellow-500">
+                        <i class="fas fa-language text-yellow-600 text-3xl mb-3"></i>
+                        <span class="font-semibold">Languages</span>
+                    </div>
+
+                    <!-- Category 7 -->
+                    <div
+                        class="bg-white p-6 rounded-2xl text-center hover:shadow-lg transition duration-300 cursor-pointer border-2 border-transparent hover:border-indigo-500">
+                        <i class="fas fa-dumbbell text-indigo-600 text-3xl mb-3"></i>
+                        <span class="font-semibold">Fitness</span>
+                    </div>
+
+                    <!-- Category 8 -->
+                    <div
+                        class="bg-white p-6 rounded-2xl text-center hover:shadow-lg transition duration-300 cursor-pointer border-2 border-transparent hover:border-teal-500">
+                        <i class="fas fa-camera text-teal-600 text-3xl mb-3"></i>
+                        <span class="font-semibold">Photography</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="gradient-bg text-white p-8 rounded-2xl">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <!-- Stat 1 -->
+                    <div>
+                        <div class="text-4xl font-bold mb-2" data-count="1000">1,000+</div>
+                        <div class="text-purple-200">Active Teachers</div>
+                    </div>
+
+                    <!-- Stat 2 -->
+                    <div>
+                        <div class="text-4xl font-bold mb-2" data-count="5000">5,000+</div>
+                        <div class="text-purple-200">Skills Available</div>
+                    </div>
+
+                    <!-- Stat 3 -->
+                    <div>
+                        <div class="text-4xl font-bold mb-2" data-count="25000">25,000+</div>
+                        <div class="text-purple-200">Sessions Completed</div>
+                    </div>
+
+                    <!-- Stat 4 -->
+                    <div>
+                        <div class="text-4xl font-bold mb-2" data-count="4.8">4.8/5</div>
+                        <div class="text-purple-200">Average Rating</div>
                     </div>
                 </div>
             </div>
@@ -191,55 +308,113 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-container">
-                <div class="footer-column">
-                    <h4>SkillSwap+</h4>
-                    <p>Connecting learners and doers through skill exchange and paid micro-sessions.</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-exchange-alt text-purple-400 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold">SkillSwap+</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Connecting learners and doers through skill exchange and paid
+                        micro-sessions.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="footer-column">
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="../../../index.html">Home</a></li>
-                        <li><a href="../../../index.html#how-it-works">How It Works</a></li>
-                        <li><a href="../../../index.html#features">Features</a></li>
-                        <li><a href="../../../index.html#community">Community</a></li>
-                        <li><a href="../../../index.html#pricing">Pricing</a></li>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../../../index.html"
+                                class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="../../../index.html#how-it-works"
+                                class="text-gray-400 hover:text-white transition duration-300">How It Works</a></li>
+                        <li><a href="../../../index.html#features"
+                                class="text-gray-400 hover:text-white transition duration-300">Features</a></li>
+                        <li><a href="../../../index.html#community"
+                                class="text-gray-400 hover:text-white transition duration-300">Community</a></li>
+                        <li><a href="../../../index.html#pricing"
+                                class="text-gray-400 hover:text-white transition duration-300">Pricing</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h4>Support</h4>
-                    <ul class="footer-links">
-                        <li><a href="./about.html">About Us</a></li>
-                        <li><a href="../contact/contact.html">Contact</a></li>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
+
+                <!-- Support -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../about/about.html"
+                                class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="../contact/contact.html"
+                                class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">FAQs</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Privacy
+                                Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Terms of
+                                Service</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h4>Contact Us</h4>
-                    <ul class="footer-links">
-                        <li><i class="fas fa-envelope"></i> hello@skillswap.com</li>
-                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
-                        <li><i class="fas fa-map-marker-alt"></i> 123 Learning St, Edutown</li>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3"></i>
+                            <span>hello@skillswap.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-3"></i>
+                            <span>123 Learning St, Edutown</span>
+                        </li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 SkillSwap+. All rights reserved.</p>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 SkillSwap+. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="../../../script.js"></script>
+    <script>
+        // Simple counter animation for stats
+        const counters = document.querySelectorAll('[data-count]');
+
+        counters.forEach(counter => {
+            const target = +counter.getAttribute('data-count');
+            const count = +counter.textContent.replace(/[^0-9.]/g, '');
+            const increment = target / 100;
+
+            let current = 0;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    counter.textContent = target.toLocaleString();
+                    clearInterval(timer);
+                } else {
+                    counter.textContent = Math.ceil(current).toLocaleString();
+                }
+            }, 20);
+        });
+    </script>
 </body>
 
 </html>
