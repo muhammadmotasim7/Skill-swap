@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SkillSwap+</title>
+    <link rel="stylesheet" href="../../../comon/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="../dashborad/dashborad.html" class="logo">
+                <i class="fas fa-exchange-alt"></i>
+                SkillSwap+
+            </a>
+
+            <nav class="nav-links">
+                <a href="../../../index.html">Home</a>
+               
+                <a href="../../../index.html#how-it-works">How It Works</a>
+                <a href="../../../index.html#features">Features</a>
+                <a href="../../../index.html#community">Community</a>
+                <a href="../../../index.html#pricing">Pricing</a>
+                 <a href="../browse/browse.html">Browse Skills</a>
+                <a href="./contact.html">Contact Us</a>
+            </nav>
+
+            <div class="auth-buttons">
+                <a href="../login/login.html" class="btn btn-secondary">Log In</a>
+                <a href="../signup/signup.html" class="btn btn-primary">Sign Up</a>
+            </div>
+
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <h1>Contact SkillSwap+</h1>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Address</h3>
+                                <p>123 Learning Street<br>Edutown, ED 12345</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>hello@skillswap.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <div class="form-header">
+                        <h2>Send Us a Message</h2>
+                        <p>We'll get back to you within 24 hours</p>
+                    </div>
+
+                    <form action="#" method="post" class="professional-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" class="form-label">
+                                    <span class="label-text">Full Name</span>
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="input-container">
+                                    <i class="fas fa-user input-icon"></i>
+                                    <input type="text" id="name" name="name" class="form-input"
+                                        placeholder="Enter your full name" required>
+                                </div>
+                                <div class="input-feedback"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email" class="form-label">
+                                    <span class="label-text">Email Address</span>
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="input-container">
+                                    <i class="fas fa-envelope input-icon"></i>
+                                    <input type="email" id="email" name="email" class="form-input"
+                                        placeholder="your.email@example.com" required>
+                                </div>
+                                <div class="input-feedback"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="subject" class="form-label">
+                                    <span class="label-text">Subject</span>
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="input-container">
+                                    <i class="fas fa-tag input-icon"></i>
+                                    <select id="subject" name="subject" class="form-input" required>
+                                        <option value="">Select a subject</option>
+                                        <option value="general">General Inquiry</option>
+                                        <option value="technical">Technical Support</option>
+                                        <option value="billing">Billing Question</option>
+                                        <option value="partnership">Partnership</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="input-feedback"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="message" class="form-label">
+                                    <span class="label-text">Message</span>
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="textarea-container">
+                                    <i class="fas fa-comment textarea-icon"></i>
+                                    <textarea id="message" name="message" class="form-textarea" rows="6"
+                                        placeholder="Please describe your inquiry in detail..." required></textarea>
+                                </div>
+                                <div class="char-counter">
+                                    <span id="char-count">0</span>/500 characters
+                                </div>
+                                <div class="input-feedback"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Preferred Contact Method</label>
+                                <div class="radio-group">
+                                    <label class="radio-option">
+                                        <input type="radio" name="contact-method" value="email" checked>
+                                        <span class="radio-custom"></span>
+                                        <div class="radio-content">
+                                            <i class="fas fa-envelope"></i>
+                                            <span>Email</span>
+                                        </div>
+                                    </label>
+                                    <label class="radio-option">
+                                        <input type="radio" name="contact-method" value="phone">
+                                        <span class="radio-custom"></span>
+                                        <div class="radio-content">
+                                            <i class="fas fa-phone"></i>
+                                            <span>Phone</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="checkbox-option">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkbox-custom"></span>
+                                    <div class="checkbox-content">
+                                        <span>Subscribe to our newsletter</span>
+                                        <small>Get updates on new features and skill opportunities</small>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span class="btn-text">Send Message</span>
+                                <i class="fas fa-paper-plane btn-icon"></i>
+                            </button>
+                            <button type="reset" class="btn btn-secondary">
+                                Clear Form
+                            </button>
+                        </div>
+
+                        <div class="form-footer">
+                            <p><span class="required">*</span> Required fields</p>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- Additional required HTML elements -->
+            <section class="html-elements">
+                <h3>HTML Elements in Contact Page</h3>
+
+                <!-- Headings -->
+                <h4>This is H4 Heading</h4>
+                <h5>This is H5 Heading</h5>
+                <h6>This is H6 Heading</h6>
+
+                <!-- Paragraph -->
+                <p>This paragraph demonstrates the consistent use of HTML elements across all pages.</p>
+
+                <!-- Horizontal Line -->
+                <hr>
+
+                <!-- Lists -->
+                <h4>Office Hours</h4>
+                <ul>
+                    <li>Monday-Friday: 9AM-6PM</li>
+                    <li>Saturday: 10AM-4PM</li>
+                    <li>Sunday: Closed</li>
+                </ul>
+
+                <!-- Image -->
+                <img src="../../../src/assets/images/contact-office.jpg" alt="Our Office" width="400">
+            </section>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h4>SkillSwap+</h4>
+                    <p>Connecting learners and doers through skill exchange and paid micro-sessions.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../../index.html">Home</a></li>
+                        <li><a href="../../../index.html#how-it-works">How It Works</a></li>
+                        <li><a href="../../../index.html#features">Features</a></li>
+                        <li><a href="../../../index.html#community">Community</a></li>
+                        <li><a href="../../../index.html#pricing">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="../about/about.html">About Us</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i> hello@skillswap.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Learning St, Edutown</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SkillSwap+. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../../script.js"></script>
+</body>
+
+</html>

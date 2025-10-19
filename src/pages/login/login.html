@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In - SkillSwap+</title>
+    <link rel="stylesheet" href="../../../comon/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div style="display: flex; justify-content:space-between ;" class="container header-container">
+            <a href="./src/pages/dashborad/dashborad.html" class="logo">
+                <i class="fas fa-exchange-alt"></i>
+                SkillSwap+
+            </a>
+
+            <nav style="display:flex;gap: 30px;" class="nav-links">
+                <a href="../../../index.html">Home</a>
+                <a href="../../../index.html#how-it-works">How It Works</a>
+                <a href="../../../index.html#features">Features</a>
+                <a href="../../../index.html#community">Community</a>
+                <a href="../../../index.html#pricing">Pricing</a>
+                <a href="../browse/browse.html">Browse Skills</a>
+                <a href="../contact/">Contact Us</a>
+            </nav>
+
+            <div class="auth-buttons">
+                <a href="./login.html" class="btn btn-secondary">Log In</a>
+                <a href="../signup/signup.html" class="btn btn-primary">Sign Up</a>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="auth-section">
+        <div class="container">
+            <div class="auth-container">
+                <h2>Welcome Back</h2>
+                <p>Log in to your SkillSwap+ account</p>
+                <form class="auth-form">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <div class="form-options">
+                        <label class="checkbox">
+                            <input type="checkbox"> Remember me
+                        </label>
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Log In</button>
+                </form>
+                <p class="auth-switch">Don't have an account? <a href="../signup/signup.html">Sign up</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h4>SkillSwap+</h4>
+                    <p>Connecting learners and doers through skill exchange and paid micro-sessions.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <a href="./index.html">Home</a>
+                        <a href="./src/pages/browse/browse.html">Browse Skills</a>
+                        <a href="./src/pages/contact/contact.html">Contact Us</a>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="./src/pages/browse/browse.html">Browse Skills</a></li>
+                        <li><a href="./src/pages/contact/contact.html">Contact Us</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i> hello@skillswap.com</li>
+                        <li><i class="fas fa-phone"></i> +92318-4347799</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Mustafa Abad ,kasur</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SkillSwap+. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

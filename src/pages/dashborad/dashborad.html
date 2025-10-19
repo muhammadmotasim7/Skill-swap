@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dashboard - SkillSwap+</title>
+    <link rel="stylesheet" href="../../../comon/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="dashboard">
+        <!-- Dashboard Header -->
+        <header class="dashboard-header">
+            <div class="container dashboard-nav">
+                <a href="./dashborad.html" class="logo">
+                    <i class="fas fa-exchange-alt"></i>
+                    SkillSwap+
+                </a>
+                <nav class="nav-links">
+                    <a href="../../../index.html">Home</a>
+                    <a href="../../../index.html#how-it-works">How It Works</a>
+                    <a href="../../../index.html#features">Features</a>
+                    <a href="../../../index.html#community">Community</a>
+                    <a href="../../../index.html#pricing">Pricing</a>
+                    <a href="../browse/browse.html">Browse Skills</a>
+                    <a href="../contact/contact.html">Contact Us</a>
+                </nav>
+
+                <div class="user-menu">
+                    <div class="user-avatar">JS</div>
+                    <div>
+                        <div style="font-weight: 600; color: #1e293b;">John Smith</div>
+                        <div style="font-size: 0.9rem; color: #64748b;">Premium Member</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container dashboard-container">
+            <!-- Sidebar -->
+            <aside class="dashboard-sidebar">
+                <ul class="sidebar-menu">
+                    <li><a href="#" class="active"><i class="fas fa-home"></i> Dashboard</a></li>
+                    <li><a href="#"><i class="fas fa-user"></i> My Profile</a></li>
+                    <li><a href="#"><i class="fas fa-search"></i> Browse Skills</a></li>
+                    <li><a href="#"><i class="fas fa-calendar"></i> My Sessions</a></li>
+                    <li><a href="#"><i class="fas fa-comments"></i> Messages</a></li>
+                    <li><a href="#"><i class="fas fa-wallet"></i> Earnings</a></li>
+                    <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                </ul>
+
+                <div class="profile-completion">
+                    <div class="completion-header">
+                        <h4 style="margin: 0; color: #1e293b;">Profile Completion</h4>
+                        <span style="font-weight: 600; color: #3b82f6;">75%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 75%;"></div>
+                    </div>
+                    <p style="margin: 0; font-size: 0.9rem; color: #64748b;">Complete your profile to get more matches
+                    </p>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="dashboard-main">
+                <!-- Stats Overview -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="stat-number">12</div>
+                        <div class="stat-label">Upcoming Sessions</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="stat-number">4.8</div>
+                        <div class="stat-label">Average Rating</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-number">24</div>
+                        <div class="stat-label">Students Taught</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div class="stat-number">$1,250</div>
+                        <div class="stat-label">Total Earnings</div>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="dashboard-section">
+                    <div class="section-header">
+                        <h2>Quick Actions</h2>
+                    </div>
+                    <div class="quick-actions">
+                        <a href="#" class="action-card">
+                            <i class="fas fa-plus"></i>
+                            <div>Add New Skill</div>
+                        </a>
+                        <a href="#" class="action-card">
+                            <i class="fas fa-search"></i>
+                            <div>Find Learners</div>
+                        </a>
+                        <a href="#" class="action-card">
+                            <i class="fas fa-calendar-plus"></i>
+                            <div>Schedule Session</div>
+                        </a>
+                        <a href="#" class="action-card">
+                            <i class="fas fa-chart-line"></i>
+                            <div>View Analytics</div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Upcoming Sessions -->
+                <div class="dashboard-section">
+                    <div class="section-header">
+                        <h2>Upcoming Sessions</h2>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div class="sessions-grid">
+                        <div class="session-card">
+                            <div class="session-avatar">MJ</div>
+                            <div class="session-info">
+                                <h4>Web Development Basics</h4>
+                                <div class="session-meta">
+                                    <span><i class="fas fa-user"></i> Maria Johnson</span>
+                                    <span><i class="fas fa-clock"></i> Tomorrow, 2:00 PM</span>
+                                    <span><i class="fas fa-video"></i> Online</span>
+                                </div>
+                            </div>
+                            <div class="session-status status-upcoming">Confirmed</div>
+                        </div>
+                        <div class="session-card">
+                            <div class="session-avatar">AR</div>
+                            <div class="session-info">
+                                <h4>Graphic Design Review</h4>
+                                <div class="session-meta">
+                                    <span><i class="fas fa-user"></i> Alex Rodriguez</span>
+                                    <span><i class="fas fa-clock"></i> Dec 15, 4:30 PM</span>
+                                    <span><i class="fas fa-map-marker-alt"></i> In Person</span>
+                                </div>
+                            </div>
+                            <div class="session-status status-upcoming">Pending</div>
+                        </div>
+                        <div class="session-card">
+                            <div class="session-avatar">SW</div>
+                            <div class="session-info">
+                                <h4>JavaScript Advanced</h4>
+                                <div class="session-meta">
+                                    <span><i class="fas fa-user"></i> Sarah Williams</span>
+                                    <span><i class="fas fa-clock"></i> Dec 18, 11:00 AM</span>
+                                    <span><i class="fas fa-video"></i> Online</span>
+                                </div>
+                            </div>
+                            <div class="session-status status-upcoming">Confirmed</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- My Skills -->
+                <div class="dashboard-section">
+                    <div class="section-header">
+                        <h2>My Skills</h2>
+                        <a href="#" class="view-all">Manage Skills</a>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4>Web Development</h4>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h4>UI/UX Design</h4>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h4>React Native</h4>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4>Database Design</h4>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activity -->
+                <div class="dashboard-section">
+                    <div class="section-header">
+                        <h2>Recent Activity</h2>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div class="sessions-grid">
+                        <div class="session-card">
+                            <div class="session-avatar" style="background: #10b981;">RK</div>
+                            <div class="session-info">
+                                <h4>Session Completed</h4>
+                                <div class="session-meta">
+                                    <span>Python Programming with Robert Kim</span>
+                                    <span><i class="fas fa-clock"></i> 2 days ago</span>
+                                </div>
+                            </div>
+                            <div class="session-status status-completed">Rated 5★</div>
+                        </div>
+                        <div class="session-card">
+                            <div class="session-avatar" style="background: #f59e0b;">LT</div>
+                            <div class="session-info">
+                                <h4>New Session Booked</h4>
+                                <div class="session-meta">
+                                    <span>Mobile App Design with Lisa Taylor</span>
+                                    <span><i class="fas fa-clock"></i> 3 days ago</span>
+                                </div>
+                            </div>
+                            <div class="session-status status-upcoming">Scheduled</div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
